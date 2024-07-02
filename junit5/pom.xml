@@ -29,4 +29,16 @@
     <module>container</module>
   </modules>
 
+  <profiles>
+    <profile>
+    <id>activate-integration-tests</id>
+      <activation>
+        <jdk>[11,)</jdk>
+      </activation>
+      <modules>
+        <module>integration-test</module>
+      </modules>
+    </profile>
+  </profiles>
+
 </project>
